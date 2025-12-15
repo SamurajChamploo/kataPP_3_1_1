@@ -1,7 +1,7 @@
 package com.example.kataPP_3_1_1.controller;
 
 import com.example.kataPP_3_1_1.model.User;
-import com.example.kataPP_3_1_1.service.UserService;
+import com.example.kataPP_3_1_1.service.UserServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class UserController {
 
-    private final UserService userService;
+    private final UserServiceImpl userService;
 
-    public UserController(UserService userService) {
+    public UserController(UserServiceImpl userService) {
         this.userService = userService;
     }
 
